@@ -66,6 +66,8 @@ struct TopMoviePreview: View {
                     
                 }
             }
+            .background(LinearGradient.balckOpacityGradient.padding(.top, 250))
+            
         }
         .foregroundColor(.white)
     }
