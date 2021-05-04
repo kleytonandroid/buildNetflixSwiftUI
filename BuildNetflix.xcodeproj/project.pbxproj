@@ -49,6 +49,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		425254FC2641737300BED954 /* HomeViews */ = {
+			isa = PBXGroup;
+			children = (
+				42A64F92263CA32B00D627FC /* HomeView.swift */,
+				42A64F9D263CA65600D627FC /* HomeVM.swift */,
+			);
+			path = HomeViews;
+			sourceTree = "<group>";
+		};
+		425254FD2641738B00BED954 /* HelperViews */ = {
+			isa = PBXGroup;
+			children = (
+				42DD8C892640C233005B840C /* TopMoviePreview.swift */,
+				424B742B2640D13800EA0DF2 /* WhiteButton.swift */,
+				420EF23E2640CBBD00BCFF8F /* SmallVerticalButton.swift */,
+				42A64F99263CA47A00D627FC /* StandardHomeMovie.swift */,
+			);
+			path = HelperViews;
+			sourceTree = "<group>";
+		};
+		425254FE264173CC00BED954 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				42A64F9B263CA4BA00D627FC /* GlobalHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		425254FF264173E500BED954 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42A64F97263CA40600D627FC /* Movie.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		42525500264173FA00BED954 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				428E3617263CA21A000C9BD7 /* BuildNetflixApp.swift */,
+				428E361B263CA21B000C9BD7 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		428E360B263CA21A000C9BD7 = {
 			isa = PBXGroup;
 			children = (
@@ -68,18 +113,13 @@
 		428E3616263CA21A000C9BD7 /* BuildNetflix */ = {
 			isa = PBXGroup;
 			children = (
-				428E3617263CA21A000C9BD7 /* BuildNetflixApp.swift */,
-				428E361B263CA21B000C9BD7 /* Assets.xcassets */,
+				42525500264173FA00BED954 /* Shared */,
+				425254FC2641737300BED954 /* HomeViews */,
+				425254FD2641738B00BED954 /* HelperViews */,
+				425254FE264173CC00BED954 /* Helpers */,
+				425254FF264173E500BED954 /* Models */,
 				428E3620263CA21B000C9BD7 /* Info.plist */,
 				428E361D263CA21B000C9BD7 /* Preview Content */,
-				42A64F92263CA32B00D627FC /* HomeView.swift */,
-				42DD8C892640C233005B840C /* TopMoviePreview.swift */,
-				424B742B2640D13800EA0DF2 /* WhiteButton.swift */,
-				420EF23E2640CBBD00BCFF8F /* SmallVerticalButton.swift */,
-				42A64F9D263CA65600D627FC /* HomeVM.swift */,
-				42A64F97263CA40600D627FC /* Movie.swift */,
-				42A64F99263CA47A00D627FC /* StandardHomeMovie.swift */,
-				42A64F9B263CA4BA00D627FC /* GlobalHelpers.swift */,
 			);
 			path = BuildNetflix;
 			sourceTree = "<group>";
