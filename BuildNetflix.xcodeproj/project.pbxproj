@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		420EF23F2640CBBD00BCFF8F /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420EF23E2640CBBD00BCFF8F /* SmallVerticalButton.swift */; };
+		424B742C2640D13800EA0DF2 /* WhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424B742B2640D13800EA0DF2 /* WhiteButton.swift */; };
 		428E3618263CA21A000C9BD7 /* BuildNetflixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E3617263CA21A000C9BD7 /* BuildNetflixApp.swift */; };
 		428E361A263CA21A000C9BD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E3619263CA21A000C9BD7 /* ContentView.swift */; };
 		428E361C263CA21B000C9BD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 428E361B263CA21B000C9BD7 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		420EF23E2640CBBD00BCFF8F /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
+		424B742B2640D13800EA0DF2 /* WhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteButton.swift; sourceTree = "<group>"; };
 		428E3614263CA21A000C9BD7 /* BuildNetflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuildNetflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		428E3617263CA21A000C9BD7 /* BuildNetflixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildNetflixApp.swift; sourceTree = "<group>"; };
 		428E3619263CA21A000C9BD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				428E361D263CA21B000C9BD7 /* Preview Content */,
 				42A64F92263CA32B00D627FC /* HomeView.swift */,
 				42DD8C892640C233005B840C /* TopMoviePreview.swift */,
+				424B742B2640D13800EA0DF2 /* WhiteButton.swift */,
 				420EF23E2640CBBD00BCFF8F /* SmallVerticalButton.swift */,
 				42A64F9D263CA65600D627FC /* HomeVM.swift */,
 				42A64F97263CA40600D627FC /* Movie.swift */,
@@ -176,6 +179,7 @@
 				42A64F98263CA40600D627FC /* Movie.swift in Sources */,
 				428E3618263CA21A000C9BD7 /* BuildNetflixApp.swift in Sources */,
 				420EF23F2640CBBD00BCFF8F /* SmallVerticalButton.swift in Sources */,
+				424B742C2640D13800EA0DF2 /* WhiteButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

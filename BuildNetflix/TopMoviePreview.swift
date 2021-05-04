@@ -39,14 +39,31 @@ struct TopMoviePreview: View {
                                 .font(.system(size: 3))
                         }
                     }
-                }
+                }.padding(.bottom, 8)
                 
                 HStack {
-                    Text("My List")
                     
-                    Text("Play button")
+                    Spacer()
                     
-                    Text("Info button")
+                    SmallVerticalButton(text: "My List", isOnImage: "checkmark", isOffImage: "plus", isOn: true) {
+                        //Add action
+                    }
+                    
+                    Spacer()
+                    
+                    WhiteButton(text: "Play", imageName: "play.fill") {
+                        //Add Action
+                    }
+                    .frame(width: 120)
+                    
+                    Spacer()
+                    
+                    SmallVerticalButton(text: "Info", isOnImage: "info.circle", isOffImage: "info.circle", isOn: true) {
+                        //Add action
+                    }
+                    
+                    Spacer()
+                    
                 }
             }
         }
