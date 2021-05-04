@@ -10,7 +10,6 @@
 		420EF23F2640CBBD00BCFF8F /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420EF23E2640CBBD00BCFF8F /* SmallVerticalButton.swift */; };
 		424B742C2640D13800EA0DF2 /* WhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424B742B2640D13800EA0DF2 /* WhiteButton.swift */; };
 		428E3618263CA21A000C9BD7 /* BuildNetflixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E3617263CA21A000C9BD7 /* BuildNetflixApp.swift */; };
-		428E361A263CA21A000C9BD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E3619263CA21A000C9BD7 /* ContentView.swift */; };
 		428E361C263CA21B000C9BD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 428E361B263CA21B000C9BD7 /* Assets.xcassets */; };
 		428E361F263CA21B000C9BD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 428E361E263CA21B000C9BD7 /* Preview Assets.xcassets */; };
 		42A64F93263CA32B00D627FC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A64F92263CA32B00D627FC /* HomeView.swift */; };
@@ -27,7 +26,6 @@
 		424B742B2640D13800EA0DF2 /* WhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteButton.swift; sourceTree = "<group>"; };
 		428E3614263CA21A000C9BD7 /* BuildNetflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuildNetflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		428E3617263CA21A000C9BD7 /* BuildNetflixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildNetflixApp.swift; sourceTree = "<group>"; };
-		428E3619263CA21A000C9BD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		428E361B263CA21B000C9BD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		428E361E263CA21B000C9BD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		428E3620263CA21B000C9BD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				428E3617263CA21A000C9BD7 /* BuildNetflixApp.swift */,
-				428E3619263CA21A000C9BD7 /* ContentView.swift */,
 				428E361B263CA21B000C9BD7 /* Assets.xcassets */,
 				428E3620263CA21B000C9BD7 /* Info.plist */,
 				428E361D263CA21B000C9BD7 /* Preview Content */,
@@ -173,7 +170,6 @@
 				42A64F9C263CA4BA00D627FC /* GlobalHelpers.swift in Sources */,
 				42A64F93263CA32B00D627FC /* HomeView.swift in Sources */,
 				42A64F9E263CA65600D627FC /* HomeVM.swift in Sources */,
-				428E361A263CA21A000C9BD7 /* ContentView.swift in Sources */,
 				42A64F9A263CA47A00D627FC /* StandardHomeMovie.swift in Sources */,
 				42DD8C8A2640C233005B840C /* TopMoviePreview.swift in Sources */,
 				42A64F98263CA40600D627FC /* Movie.swift in Sources */,
