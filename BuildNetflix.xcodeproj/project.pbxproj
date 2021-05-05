@@ -19,6 +19,7 @@
 		42A64F9A263CA47A00D627FC /* StandardHomeMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A64F99263CA47A00D627FC /* StandardHomeMovie.swift */; };
 		42A64F9C263CA4BA00D627FC /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A64F9B263CA4BA00D627FC /* GlobalHelpers.swift */; };
 		42A64F9E263CA65600D627FC /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A64F9D263CA65600D627FC /* HomeVM.swift */; };
+		42BAE709264305C0003D4725 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BAE708264305C0003D4725 /* Episode.swift */; };
 		42DD8C8A2640C233005B840C /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DD8C892640C233005B840C /* TopMoviePreview.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		42A64F99263CA47A00D627FC /* StandardHomeMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardHomeMovie.swift; sourceTree = "<group>"; };
 		42A64F9B263CA4BA00D627FC /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
 		42A64F9D263CA65600D627FC /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		42BAE708264305C0003D4725 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		42DD8C892640C233005B840C /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				42A64F97263CA40600D627FC /* Movie.swift */,
+				42BAE708264305C0003D4725 /* Episode.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				42A64F9E263CA65600D627FC /* HomeVM.swift in Sources */,
 				42A64F9A263CA47A00D627FC /* StandardHomeMovie.swift in Sources */,
 				42DD8C8A2640C233005B840C /* TopMoviePreview.swift in Sources */,
+				42BAE709264305C0003D4725 /* Episode.swift in Sources */,
 				42A64F98263CA40600D627FC /* Movie.swift in Sources */,
 				428E3618263CA21A000C9BD7 /* BuildNetflixApp.swift in Sources */,
 				425255022641746B00BED954 /* MovieDetail.swift in Sources */,
