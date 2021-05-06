@@ -37,7 +37,9 @@ struct MovieDetail: View {
                                 .font(.headline)
                                 .bold()
                         }
-                    }
+                        
+                        PrimaryButton(text: "Play", imageName: "play.fill", backgroundColor: .red, foregroundColor: .white, action: {})
+                    }.padding(.horizontal, 10)
                 }
                 
             }.foregroundColor(.white)

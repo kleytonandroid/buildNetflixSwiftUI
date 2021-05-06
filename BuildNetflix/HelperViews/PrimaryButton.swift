@@ -1,5 +1,5 @@
 //
-//  WhiteButton.swift
+//  PrimaryButton.swift
 //  BuildNetflix
 //
 //  Created by Kleyton Santos on 03/05/21.
@@ -7,10 +7,13 @@
 
 import SwiftUI
 
-struct WhiteButton: View {
+struct PrimaryButton: View {
     
     var text: String
     var imageName: String
+    
+    var backgroundColor: Color = Color.white
+    var foregroundColor: Color = Color.black
     
     var action: () -> Void
     
@@ -29,20 +32,20 @@ struct WhiteButton: View {
             }
         })
         .padding(.vertical, 6)
-        .background(Color.white)
-        .foregroundColor(.black)
+        .background(backgroundColor)
+        .foregroundColor(foregroundColor)
         .cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct WhiteButton_Previews: PreviewProvider {
+struct PrimaryButton_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ZStack {
                 Color.black
                     .edgesIgnoringSafeArea(.all)
                 
-                WhiteButton(text: "Play", imageName: "play.fill") {
+                PrimaryButton(text: "Play", imageName: "play.fill") {
                     print("Tapped")
                 }
             }
