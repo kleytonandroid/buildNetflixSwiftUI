@@ -39,6 +39,17 @@ struct MovieDetail: View {
                         }
                         
                         PrimaryButton(text: "Play", imageName: "play.fill", backgroundColor: .red, foregroundColor: .white, action: {})
+                        
+                        CurrentEpisodeInformation(movie: movie)
+                        
+                        HStack {
+                            Text(movie.episodeDescriptionDisplay)
+                                .font(.subheadline)
+                            Spacer()
+                        }
+                        
+                        CastInfo(movie: movie)
+                        
                     }.padding(.horizontal, 10)
                 }
                 
@@ -107,5 +118,38 @@ struct HDView: View {
         .foregroundColor(.black)
         .border(Color.gray, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
         .cornerRadius(2.0)
+    }
+}
+
+struct CurrentEpisodeInformation: View {
+    var movie: Movie
+    
+    var body: some View {
+        HStack {
+            Text(movie.episodeInfoDisplay)
+                .bold()
+            Spacer()
+        }.padding(.vertical, 6)
+    }
+}
+
+struct CastInfo: View {
+    var movie: Movie
+    
+    var body: some View {
+        VStack(spacing: 3) {
+            HStack {
+                Text("Cast: \(movie.cast)")
+                Spacer()
+            }
+            HStack {
+                Text("Creators: \(movie.creators)")
+                    .font(.subheadline)
+                Spacer()
+            }
+        }
+        .font(.caption)
+        .foregroundColor(.gray)
+        .padding(.vertical, 10)
     }
 }
