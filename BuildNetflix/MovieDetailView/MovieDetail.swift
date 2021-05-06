@@ -19,7 +19,7 @@ struct MovieDetail: View {
             VStack {
                 HStack {
                     Spacer()
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    Button(action: {}, label: {
                         Image(systemName: "xmark.circle").font(.system(size: 28))
                     })
                     
@@ -116,7 +116,7 @@ struct HDView: View {
             
         }.frame(width: 30, height: 20)
         .foregroundColor(.black)
-        .border(Color.gray, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+        .border(Color.gray, width: 1)
         .cornerRadius(2.0)
     }
 }

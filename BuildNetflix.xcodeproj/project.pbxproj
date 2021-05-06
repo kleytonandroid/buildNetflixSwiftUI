@@ -102,7 +102,6 @@
 		428E360B263CA21A000C9BD7 = {
 			isa = PBXGroup;
 			children = (
-				425255012641746B00BED954 /* MovieDetail.swift */,
 				428E3616263CA21A000C9BD7 /* BuildNetflix */,
 				428E3615263CA21A000C9BD7 /* Products */,
 			);
@@ -119,6 +118,7 @@
 		428E3616263CA21A000C9BD7 /* BuildNetflix */ = {
 			isa = PBXGroup;
 			children = (
+				42C7BCA92643A37400C0CA3D /* MovieDetailView */,
 				42525500264173FA00BED954 /* Shared */,
 				425254FC2641737300BED954 /* HomeViews */,
 				425254FD2641738B00BED954 /* HelperViews */,
@@ -136,6 +136,14 @@
 				428E361E263CA21B000C9BD7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		42C7BCA92643A37400C0CA3D /* MovieDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				425255012641746B00BED954 /* MovieDetail.swift */,
+			);
+			path = MovieDetailView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
