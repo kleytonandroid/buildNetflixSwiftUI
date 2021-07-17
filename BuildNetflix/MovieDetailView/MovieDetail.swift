@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct MovieDetail: View {
     var movie: Movie
@@ -50,6 +51,13 @@ struct MovieDetail: View {
                         
                         CastInfo(movie: movie)
                         
+                        HStack(spacing: 60) {
+                            SmallVerticalButton(text: "My List", isOnImage: "checkmark", isOffImage: "plus", isOn: true, action: {})
+                            SmallVerticalButton(text: "Rate", isOnImage: "hand.thumbsup.fill", isOffImage: "hand.thumbsup", isOn: true, action: {})
+                            SmallVerticalButton(text: "Share", isOnImage: "square.and.arrow.up", isOffImage: "square.and.arrow.up", isOn: true, action: {})
+                            Spacer()
+                        }.padding()
+                        
                     }.padding(.horizontal, 10)
                 }
                 
@@ -63,6 +71,12 @@ struct MovieDetail_Previews: PreviewProvider {
     static var previews: some View {
         MovieDetail(movie: exampleMovie5)
     }
+}
+
+enum CustomTab: String {
+    case episodes = "EPISODES"
+    case trailers = "TRAILERS & MORE"
+    case more = "MORE LIKE THIS"
 }
 
 struct MovieInfoSubheadline: View {
