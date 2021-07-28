@@ -56,11 +56,13 @@ struct MovieDetail: View {
                             SmallVerticalButton(text: "Rate", isOnImage: "hand.thumbsup.fill", isOffImage: "hand.thumbsup", isOn: true, action: {})
                             SmallVerticalButton(text: "Share", isOnImage: "square.and.arrow.up", isOffImage: "square.and.arrow.up", isOn: true, action: {})
                             Spacer()
-                        }.padding()
+                        }.padding(.leading, 20)
+                        
+//                        CustomTabSwitcher(tabs: [.episodes, .trailers, .more], movie: movie)
                         
                     }.padding(.horizontal, 10)
                 }
-                
+                Spacer()
             }.foregroundColor(.white)
         }
         
@@ -71,12 +73,6 @@ struct MovieDetail_Previews: PreviewProvider {
     static var previews: some View {
         MovieDetail(movie: exampleMovie5)
     }
-}
-
-enum CustomTab: String {
-    case episodes = "EPISODES"
-    case trailers = "TRAILERS & MORE"
-    case more = "MORE LIKE THIS"
 }
 
 struct MovieInfoSubheadline: View {
