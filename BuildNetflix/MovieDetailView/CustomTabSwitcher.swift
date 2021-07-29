@@ -50,7 +50,7 @@ struct CustomTabSwitcher: View {
             case .episodes:
                 Text("EPISODES")
             case .trailers:
-                Text("TRAILERS")
+                TrailerList(trailers: movie.trailers)
             case .more:
                 MoreLikeThis(movies: movie.moreLikeThisMovies)
             }
@@ -69,7 +69,7 @@ struct CustomTabSwitcher_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
             Color.black.edgesIgnoringSafeArea(.all)
-            CustomTabSwitcher(tabs: [.episodes, .trailers, .more], movie: exampleMovie5)
+            CustomTabSwitcher(tabs: [.episodes, .trailers, .more], movie: exampleMovie1)
         }
         
     }

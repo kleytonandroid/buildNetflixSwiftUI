@@ -8,6 +8,27 @@
 import Foundation
 import SwiftUI
 
+let exampleVideoURL = URL(string: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")!
+
+let exampleImageURL = URL(string: "https://picsum.photos/300/104")!
+
+let exampleImageURL2 = URL(string: "https://picsum.photos/300/105")!
+
+let exampleImageURL3 = URL(string: "https://picsum.photos/300/106")!
+
+var randomExampleImageURL: URL {
+    return [exampleImageURL, exampleImageURL2, exampleImageURL3].randomElement() ?? exampleImageURL
+}
+
+let exampleTrailer1 = Trailer(name: "Season 3 Trailer", videoURL: exampleVideoURL, thumbnailImageURL: randomExampleImageURL)
+
+let exampleTrailer2 = Trailer(name: "The Hero's Journey", videoURL: exampleVideoURL, thumbnailImageURL: randomExampleImageURL)
+
+let exampleTrailer3 = Trailer(name: "The Mysterious", videoURL: exampleVideoURL, thumbnailImageURL: randomExampleImageURL)
+
+let exampleTrailers = [exampleTrailer1, exampleTrailer2, exampleTrailer3]
+
+
 let exampleMovie1 = Movie(id: UUID().uuidString,
                           name: "DARK",
                           thumbnailURL: URL(string: "https://picsum.photos/200/300")!,
@@ -16,18 +37,23 @@ let exampleMovie1 = Movie(id: UUID().uuidString,
                           rating: "TV-MA",
                           numberOfSeasons: 1,
                           isHD: true,
-                          defaultEpisodeInfo: exampleEpisodeInfo1, creators: "Baran bo Odan, Jantje Friese",
+                          trailers: exampleTrailers,
+                          defaultEpisodeInfo: exampleEpisodeInfo1,
+                          creators: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
                           moreLikeThisMovies: [exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6, exampleMovie7].shuffled())
 
 let exampleMovie2 = Movie(id: UUID().uuidString,
-                          name: "The big bang theory", thumbnailURL: URL(string: "https://picsum.photos/200/301")!,
+                          name: "The big bang theory",
+                          thumbnailURL: URL(string: "https://picsum.photos/200/301")!,
                           categories: ["Dystopinan", "Exciting", "Suspenseful", "Sci-Fi TV"],
                           year: 2020, rating: "TV-MA",
                           numberOfSeasons: 2,
                           isHD: true,
                           promotionHeadline: "Best Rated Show",
-                          defaultEpisodeInfo: exampleEpisodeInfo1, creators: "Baran bo Odan, Jantje Friese",
+                          trailers: exampleTrailers,
+                          defaultEpisodeInfo: exampleEpisodeInfo1,
+                          creators: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
                           moreLikeThisMovies: [])
 
@@ -39,7 +65,9 @@ let exampleMovie3 = Movie(id: UUID().uuidString,
                           rating: "TV-MA",
                           numberOfSeasons: 3,
                           isHD: true,
-                          defaultEpisodeInfo: exampleEpisodeInfo1, creators: "Baran bo Odan, Jantje Friese",
+                          trailers: exampleTrailers,
+                          defaultEpisodeInfo: exampleEpisodeInfo1,
+                          creators: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
                           moreLikeThisMovies: [])
 
@@ -51,7 +79,9 @@ let exampleMovie4 = Movie(id: UUID().uuidString,
                           rating: "TV-MA",
                           numberOfSeasons: 4,
                           isHD: true,
-                          defaultEpisodeInfo: exampleEpisodeInfo1, creators: "Baran bo Odan, Jantje Friese",
+                          trailers: exampleTrailers,
+                          defaultEpisodeInfo: exampleEpisodeInfo1,
+                          creators: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
                           moreLikeThisMovies: [])
 
@@ -63,7 +93,9 @@ let exampleMovie5 = Movie(id: UUID().uuidString,
                           numberOfSeasons: 5,
                           isHD: true,
                           promotionHeadline: "New episodes comming soon",
-                          defaultEpisodeInfo: exampleEpisodeInfo1, creators: "Baran bo Odan, Jantje Friese",
+                          trailers: exampleTrailers,
+                          defaultEpisodeInfo: exampleEpisodeInfo1,
+                          creators: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
                           moreLikeThisMovies: [])
 
@@ -75,7 +107,9 @@ let exampleMovie6 = Movie(id: UUID().uuidString,
                           rating: "TV-MA",
                           numberOfSeasons: 6,
                           isHD: false,
-                          defaultEpisodeInfo: exampleEpisodeInfo1, creators: "Baran bo Odan, Jantje Friese",
+                          trailers: exampleTrailers,
+                          defaultEpisodeInfo: exampleEpisodeInfo1,
+                          creators: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
                           moreLikeThisMovies: [])
 
@@ -87,7 +121,9 @@ let exampleMovie7 = Movie(id: UUID().uuidString,
                           rating: "TV-MA",
                           numberOfSeasons: 6,
                           isHD: false,
-                          defaultEpisodeInfo: exampleEpisodeInfo1, creators: "Baran bo Odan, Jantje Friese",
+                          trailers: exampleTrailers,
+                          defaultEpisodeInfo: exampleEpisodeInfo1,
+                          creators: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
                           moreLikeThisMovies: [])
 

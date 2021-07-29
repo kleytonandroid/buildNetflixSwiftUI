@@ -58,7 +58,7 @@ struct MovieDetail: View {
                             Spacer()
                         }.padding(.leading, 20)
                         
-//                        CustomTabSwitcher(tabs: [.episodes, .trailers, .more], movie: movie)
+                        CustomTabSwitcher(tabs: [.episodes, .trailers, .more], movie: movie)
                         
                     }.padding(.horizontal, 10)
                 }
@@ -71,7 +71,7 @@ struct MovieDetail: View {
 
 struct MovieDetail_Previews: PreviewProvider {
     static var previews: some View {
-        MovieDetail(movie: exampleMovie5)
+        MovieDetail(movie: exampleMovie1)
     }
 }
 
